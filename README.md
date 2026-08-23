@@ -1,242 +1,215 @@
-# Lumina Dev Portfolio
+# Emon — AI Engineer & Full-Stack Developer
 
-Design a futuristic, immersive, and premium portfolio website for a skilled developer.
+Welcome to my personal developer portfolio.
 
-The visual aesthetic must reflect the style, colors, glow, and modern elegance of the attached image named reference.
+I’m **Emon**, an **AI Engineer, Web Developer, and App Developer** passionate about building intelligent applications, modern web experiences, and innovative digital products.
 
-Use cutting-edge tools:
+This portfolio is designed to showcase my **skills, projects, technical experience, and development journey** through an interactive and visually immersive experience.
 
-GSAP for powerful animation
+## 🌐 Portfolio
 
-Locomotive Scroll for smooth parallax scrolling
+You can explore my portfolio online:
 
-Spline for 3D integration in the hero section
+**Live Website:**
+https://ethereal-flow-gallery.lovable.app
 
-Site must be fully responsive across all devices.
+The website provides an interactive way to learn about me, explore my projects, discover my technical skills, and get in touch with me.
 
-🔄 GSAP Loading Animation & Progress Bar (New)
+---
 
-Add a modern, cinematic loading animation before the main content appears:
+## ✨ Features
 
-Fullscreen preloader screen with a centered animated logo or text (e.g., "Milad")
+### 🎨 Modern & Immersive Design
 
-Include a progress bar that fills from 0% to 100% using GSAP
+The portfolio features a futuristic and premium visual design with:
 
-After loading completes:
+* Dark modern interface
+* Neon blue and violet accents
+* Glassmorphism effects
+* Smooth gradients and glowing elements
+* Interactive hover effects
+* Responsive layouts
 
-Progress bar fades out
+### 🚀 Interactive Hero Section
 
-Preloader scales and fades away
+The homepage introduces me with a visually engaging hero section containing:
 
-Main content fades in with smooth transitions
+* Personal introduction
+* Professional roles
+* Interactive 3D visual experience
+* Animated text
+* Call-to-action buttons
+* Smooth visual transitions
 
-Example animation flow (GSAP):
+### 👨‍💻 About Me
 
-js
+The About section provides information about my professional interests and development background.
 
-Copy
+It also highlights some of my core technologies and technical skills.
 
-Edit
+### 🛠️ Skills & Technologies
 
-gsap.to(".progress-bar", {
+The portfolio showcases my experience with modern development technologies, including:
 
-  width: "100%",
+* Artificial Intelligence
+* Web Development
+* App Development
+* HTML
+* CSS
+* JavaScript
+* React
+* GSAP
+* And other modern development tools and technologies
 
-  duration: 2,
+### 💼 Projects Showcase
 
-  ease: "power2.out",
+A dedicated Projects section presents my selected development projects.
 
-  onComplete: () => {
+Each project can include:
 
-    gsap.to(".preloader", {
+* Project preview
+* Project title
+* Project description
+* Technologies used
+* Project links
+* Interactive visual effects
 
-      opacity: 0,
+This section allows visitors to quickly understand the type of applications and digital products I build.
 
-      scale: 0.9,
+### 📩 Contact
 
-      duration: 1,
+Visitors can contact me through the dedicated contact section.
 
-      onComplete: () => {
+It includes:
 
-        document.querySelector(".preloader").style.display = "none";
+* Name
+* Email
+* Message
+* Contact button
+* Social media links
 
-      }
+### 📱 Fully Responsive
 
-    });
+The portfolio is designed to work across different screen sizes, including:
 
-  }
+* Desktop
+* Laptop
+* Tablet
+* Mobile
 
-});
+The layout, navigation, project cards, typography, and interactive elements automatically adapt to smaller screens.
 
-The loading sequence should set the tone: techy, smooth, and premium.
+### 🎬 Smooth Animations
 
-📄 Pages & Sections
+The website uses modern animation techniques to create a smooth browsing experience.
 
-1. Homepage / Hero Section
+Animations include:
 
-Large animated headline: “Hi, I’m Emon – AI Engineer,Web Developer,App developer”
+* Page-load transitions
+* Text reveal animations
+* Scroll animations
+* Hover effects
+* Floating visual elements
+* Project card animations
+* Smooth section transitions
 
-Subtitle + glowing “Hire Me” CTA button
+### 🌌 Interactive 3D Experience
 
-Background:
+The hero section includes an interactive 3D visual experience powered by **Spline**, adding depth and a more immersive feel to the portfolio.
 
-Fullscreen Spline 3D model use this embed:
+---
 
-(<iframe src='https://my.spline.design/orb-HK46YgKcfB71Wy7eB6GKUqFr/' frameborder='0' width='100%' height='100%'></iframe>)
+## ⚙️ Technologies
 
-Floating neon orbs that scroll subtly
+The portfolio is built using modern web technologies and creative development tools.
 
-GSAP Animations:
+| Technology        | Purpose                      |
+| ----------------- | ---------------------------- |
+| HTML5             | Structure                    |
+| CSS3              | Styling & responsive design  |
+| JavaScript        | Interactions & functionality |
+| React             | UI development               |
+| GSAP              | Animations                   |
+| ScrollTrigger     | Scroll-based animations      |
+| Locomotive Scroll | Smooth scrolling             |
+| Spline            | Interactive 3D experience    |
+| Phosphor Icons    | Interface icons              |
+| Inter             | Typography                   |
 
-Headline: opacity 0 → 1, y: 50 → 0, blur: 10px → 0
+---
 
-CTA: scale pulse on hover
+## 👀 How to View the Portfolio
 
-Spline fades in from right
+### Online
 
-Background glow elements float using yoyo & repeat
+The easiest way to view my portfolio is through the live website:
 
-2. About Section
+**https://ethereal-flow-gallery.lovable.app**
 
-Left: Profile image in glowing circular frame (lift/rotate on hover)
+Open the link in any modern browser such as:
 
-Right: Short bio + grid of skill icons (HTML, CSS, JS, React, GSAP)
+* Google Chrome
+* Mozilla Firefox
+* Microsoft Edge
+* Safari
 
-Use Phosphor Icons (light style)
+For the best experience, use a modern desktop or mobile browser with JavaScript enabled.
 
-GSAP:
+### Run Locally
 
-Section fade + blur-clear
+If you want to run the portfolio locally:
 
-Image enters from left
-
-Icons appear staggered
-
-3. Projects Section
-
-Horizontal bento-style scrollable layout
-
-6 glassmorphic project cards:
-
-Attached images project-1 to project-6, title, short description
-
-Tech stack icons, glowing CTA
-
-On hover: cards lift and glow
-
-GSAP + ScrollTrigger:
-
-Cards fade/scale/y position with stagger
-
-Mobile: stack cards and make slider swipeable
-
-4. Contact Section
-
-Form: Name, Email, Message
-
-Submit button: hover glow + scale bounce on send
-
-Social icons (GitHub, LinkedIn)
-
-Glassmorphic inputs with glowing focus
-
-GSAP:
-
-Inputs fade from left
-
-Submit pulses
-
-Icons glow on hover
-
-5. Footer Section
-
-Mini nav links + social icons
-
-Background: glowing floating particles
-
-GSAP: fade + slide-up (y: 60 → 0, blur → 0)
-
-📱 Responsive Behavior
-
-Hero/About stack vertically on small screens
-
-Nav becomes hamburger with full-screen slide tray
-
-Spline model and profile image scale to fit
-
-Projects slider becomes swipeable
-
-⚙️ Animation Strategy
-
-GSAP ScrollTrigger for scroll-based animation
-
-Locomotive Scroll for parallax and smooth scroll
-
-GSAP Timelines for chaining animations
-
-Use:
-
-from(), fromTo(), stagger
-
-blur-to-clear, opacity 0 → 1, y 40 → 0
-
-Floating background elements using:
-
-js
-
-Copy
-
-Edit
-
-gsap.to(".glow-orb", {
-
-  y: -20,
-
-  duration: 3,
-
-  repeat: -1,
-
-  yoyo: true,
-
-  ease: "power1.inOut"
-
-});
-
-🧠 Design System
-
-Font: Inter (light, tight spacing)
-
-Icons: Phosphor (light)
-
-Text: Bold headings, semi-transparent body
-
-Cards: Glassmorphic, blurred backgrounds
-
-Buttons: Neumorphic glow
-
-Colors: Blues, violets, neons, gradients
-
-Effects: Soft shadows, glowing blur, floating visuals
-
-This project was built with [Lovable](https://lovable.dev).
-
-**Live app**: https://ethereal-flow-gallery.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/4b3b0b2b-5c4a-4212-94db-a62c91f1d438).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
+```bash
+git clone <your-repository-url>
 cd <repository-name>
-npm i
+npm install
 npm run dev
 ```
+
+Then open the local development URL provided by the development server.
+
+---
+
+## 🎯 What You Can Explore
+
+When visiting the portfolio, you can explore:
+
+**01 — Home**
+A brief introduction and overview of who I am.
+
+**02 — About**
+More information about my background and technical interests.
+
+**03 — Skills**
+An overview of the technologies and tools I work with.
+
+**04 — Projects**
+Selected projects demonstrating my development capabilities.
+
+**05 — Contact**
+Ways to connect with me for collaboration, opportunities, or projects.
+
+---
+
+## 👨‍💻 About Me
+
+I am an **AI Engineer, Web Developer, and App Developer** interested in solving real-world problems through technology.
+
+My interests include **Artificial Intelligence, modern web applications, application development, interactive interfaces, and emerging technologies**.
+
+I enjoy learning new technologies, experimenting with creative ideas, and turning concepts into functional and engaging digital products.
+
+---
+
+## 📬 Let's Connect
+
+If you are interested in my work, want to collaborate, or have an interesting project idea, feel free to connect with me through the social and contact links available on my portfolio.
+
+---
+
+## ⭐ Portfolio
+
+**Explore the complete portfolio:**
+https://ethereal-flow-gallery.lovable.app
+
+**Designed & Developed by Emon**
